@@ -7,15 +7,11 @@ library("cluster")
 library("TSclust")
 library("lgarch")
 library("MASS")
-library("doParallel")
 library(ggplot2)
 library(reshape2)
-library("foreach")
 library("lgarch")
 library(dplyr)
-library(Rsolnp)
 library(classInt)
-library(nleqslv)
 library(Matrix)
 library("igraph")
 library("wesanderson")
@@ -392,4 +388,5 @@ ggplot(vol_df_melted, aes(x = Date, y = value, color = variable)) +
   labs(title = "EGARCH-Fitted Volatility for Selected Stocks",
        x = "Date", y = "Conditional Volatility",
        color = "Stock") +
+
   theme(legend.position = "top")
